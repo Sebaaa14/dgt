@@ -10,10 +10,13 @@ import Proyectos from "./pages/proyectos";
 import Acerca from "./pages/acerca";
 import Contactos from "./pages/contactos";
 import NotFound from "./pages/notFound";
+import Header from "./pages/header";
+import Footer from "./pages/footer";
 
 function App() {
   return (
     <Router>
+      <Header/>
       <Routes>
         <Route path="/" element={<Navigate to="/inicio" />} />
         <Route path="/inicio" element={<Inicio />} />
@@ -22,6 +25,7 @@ function App() {
         <Route path="/contactos" element={<Contactos />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
