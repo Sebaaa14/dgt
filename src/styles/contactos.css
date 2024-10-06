@@ -1,0 +1,56 @@
+.full-page-background {
+  background-color: #f7d7ba; /* Color de fondo */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-container {
+  background-color: #fbe5d1;
+  padding: 50px;
+  min-height: 700px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contact-info h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.input-field,
+.message-field {
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.submit-button {
+  background-color: #f5c28f !important;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  border-color: #e0ad79 !important;
+  width: 100%;
+  color: white !important;
+}
+
+.submit-button:hover {
+  background-color: #e0ad79 !important;
+}
