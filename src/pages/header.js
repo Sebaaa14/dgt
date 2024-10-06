@@ -8,7 +8,7 @@ const header = () => {
     <Navbar className="custom-navbar" expand="lg">
       <Container>
         {/* Logo a la izquierda */}
-        <Navbar.Brand>
+        <Navbar.Brand href="/">
           <img
             src={logo} // Ruta a tu logo
             alt="Logo"
@@ -20,7 +20,9 @@ const header = () => {
         {/* Elementos de navegación a la derecha */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto"> {/* ms-auto para alinear a la derecha */}
+          <Nav className="ms-auto">
+            {" "}
+            {/* ms-auto para alinear a la derecha */}
             <Nav.Link href="inicio">Inicio</Nav.Link>
             <Nav.Link href="proyectos">Proyectos</Nav.Link>
             <Nav.Link href="acerca">Nosotros</Nav.Link>
@@ -31,6 +33,5 @@ const header = () => {
     </Navbar>
   );
 };
-
 
 export default header;
