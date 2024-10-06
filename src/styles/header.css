@@ -22,22 +22,19 @@
 }
 /* Estilos para los enlaces del menú */
 .custom-navbar .nav-link {
-  color: rgb(0, 0, 0) !important; 
-  margin-left: 1rem; 
-  transition: transform 0.3s ease, color 0.3s ease; 
+  padding-top: 7%;
+  padding-bottom: 7%;
+  color: rgb(0, 0, 0) !important;
+  margin-left: 1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .custom-navbar .nav-link:hover {
-  color: rgba(
-    163,
-    134,
-    6,
-    0.8
-  ) !important; 
-  transform: scale(1.1); 
+  color: rgba(163, 134, 6, 0.8) !important;
+  transform: scale(1.1);
 }
 
 /* Fondo del Navbar */
 .custom-navbar {
-  background-color: rgb(255, 255, 255); 
+  background-color: rgb(255, 255, 255);
 }
