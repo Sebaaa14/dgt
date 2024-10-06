@@ -1,0 +1,43 @@
+.custom-navbar {
+  padding: 0.5rem 1rem;
+}
+
+/* Estilo para el toggle (hamburguesa) en dispositivos móviles */
+.custom-navbar .navbar-toggler {
+  border: none;
+}
+
+.custom-navbar .navbar-toggler:focus {
+  outline: none;
+}
+
+/* Cambia el color del icono de hamburguesa */
+.custom-navbar .navbar-toggler-icon {
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+}
+/* Cambiar el color del icono en hover */
+.custom-navbar .navbar-toggler:hover .navbar-toggler-icon {
+  background-color: rgba(78, 78, 78, 0.8);
+}
+/* Estilos para los enlaces del menú */
+.custom-navbar .nav-link {
+  color: rgb(0, 0, 0) !important; 
+  margin-left: 1rem; 
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.custom-navbar .nav-link:hover {
+  color: rgba(
+    163,
+    134,
+    6,
+    0.8
+  ) !important; 
+  transform: scale(1.1); 
+}
+
+/* Fondo del Navbar */
+.custom-navbar {
+  background-color: rgb(255, 255, 255); 
+}

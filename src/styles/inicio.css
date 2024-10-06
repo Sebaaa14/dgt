@@ -1,37 +1,64 @@
 /* Asegúrate de que el contenedor principal no tenga padding */
 .container-fluid {
-    padding: 0;
-  }
-  
-  /* Estilos para las secciones con imagen de fondo */
-  .section {
-    height: 100vh; /* La sección ocupará toda la altura de la pantalla */
-    background-size: cover; /* Asegura que la imagen cubra todo el área */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-  }
-  
-  /* Sección 1 con imagen de fondo */
-  .section-1 {
-    background-image: url('../images/inicio/Home-1row.jpg');
-  }
-  
-  /* Sección 2 con imagen de fondo */
-  .section-2 {
-    background-image: url('../images/inicio/Home-2row.jpg');
-  }
-  
-  /* Sección 3 con imagen de fondo */
-  .section-3 {
-    background-image: url('../images/inicio/Home-3row.png');
-  }
-  
-  /* Estilos para el texto */
-  .section h1,
-  .section h3,
-  .section p {
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade una sombra al texto */
-  }
-  
-  
+  padding: 0;
+}
+
+/* Estilos para las secciones con imagen de fondo */
+.section {
+  position: relative; /* Para que el contenido esté encima de la capa de imagen */
+  height: 100vh; /* La sección ocupará toda la altura de la pantalla */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2; 
+  opacity: 0.9; /* Opacidad imagenes */
+}
+
+/* Sección 1 con imagen de fondo */
+.section-1::before {
+  background-image: url('../images/inicio/home1.png');
+}
+
+/* Sección 2 con imagen de fondo */
+.section-2::before {
+  background-image: url('../images/inicio/Home-2row.jpg');
+}
+
+/* Sección 3 con imagen de fondo */
+.section-3::before {
+  background-image: url('../images/inicio/Home-3row.jpg');
+}
+
+/* Añadir una capa oscura */
+.section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Cambia el valor alpha para ajustar la oscuridad */
+  z-index: -1; /* Esta capa estará encima de la imagen de fondo pero detrás del contenido */
+}
+
+/* Estilos para el texto */
+.section h1,
+.section h3,
+.section p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra al texto */
+  z-index: 1; /* Asegura que el texto esté encima de la capa de imagen */
+}
