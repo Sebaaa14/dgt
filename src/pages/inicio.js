@@ -27,7 +27,7 @@ const inicio = () => {
         <Col md={8}>
           <h3 className="text-white">Tecnología de último nivel</h3>
           <p className="text-white">
-            Las altas capacidades de cada persona de nuestra empresa nos han
+            Las altas capacidades del personal de nuestra empresa nos han
             permitido implementar las últimas tecnologías del mercado.
           </p>
         </Col>

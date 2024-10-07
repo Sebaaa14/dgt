@@ -24,7 +24,7 @@
 .custom-navbar .nav-link {
   padding-top: 7%;
   padding-bottom: 7%;
-  color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
   margin-left: 1rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -36,5 +36,9 @@
 
 /* Fondo del Navbar */
 .custom-navbar {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(48, 47, 47);
+}
+
+.custom-navbar img {
+  filter: brightness(0) invert(1);
 }
