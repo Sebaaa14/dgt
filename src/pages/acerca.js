@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const acerca = () => {
-  return (
-    <div>acerca</div>
-  )
-}
+const Acerca = () => {
+  return <div>acerca</div>;
+};
 
-export default acerca
+export default Acerca;
