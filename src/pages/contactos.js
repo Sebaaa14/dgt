@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "../styles/contactos.css";
 
-const contactos = () => {
+const Contactos = () => {
   return (
     <div className="full-page-background">
       <Container
@@ -82,4 +82,4 @@ const contactos = () => {
   );
 };
 
-export default contactos;
+export default Contactos;

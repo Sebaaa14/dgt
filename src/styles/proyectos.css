@@ -1,0 +1,21 @@
+/* Estilos personalizados para la página de proyectos */
+.banner-container {
+  background-color: #fbe5d1;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+.banner-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.banner-container button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+.test {
+  cursor: pointer;
+}

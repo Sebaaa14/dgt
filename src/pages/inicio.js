@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../styles/inicio.css";
 
-const inicio = () => {
+const Inicio = () => {
   return (
     <Container fluid className="p-0">
       <Row className="section section-1 d-flex align-items-center justify-content-center text-center">
@@ -39,4 +39,4 @@ const inicio = () => {
   );
 };
 
-export default inicio;
+export default Inicio;
