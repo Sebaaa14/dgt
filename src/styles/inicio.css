@@ -4,12 +4,21 @@
 }
 
 .section {
-  position: relative; 
-  height: 100vh; 
+  position: relative;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.espacio {
+  padding-bottom: 0.7vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(44, 31, 3),
+    rgb(116, 90, 25)
+  );
 }
 
 .section::before {
@@ -17,25 +26,25 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -2; 
+  z-index: -2;
   opacity: 0.9; /* Opacidad imagenes */
 }
 
 .section-1::before {
-  background-image: url('../images/inicio/home1.png');
+  background-image: url("../images/inicio/Home-1row.png");
 }
 
 .section-2::before {
-  background-image: url('../images/inicio/Home-2row.jpg');
+  background-image: url("../images/inicio/Home-2row.jpg");
 }
 
 .section-3::before {
-  background-image: url('../images/inicio/Home-3row.jpg');
+  background-image: url("../images/inicio/Home-3row.jpg");
 }
 
 /* Añadir una capa oscura */
@@ -46,8 +55,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Cambia el valor alpha para ajustar la oscuridad */
-  z-index: -1; 
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Cambia el valor alpha para ajustar la oscuridad */
+  z-index: -1;
 }
 
 /* Estilos para el texto */
@@ -56,5 +70,5 @@
 .section p {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra al texto */
-  z-index: 1; 
+  z-index: 1;
 }

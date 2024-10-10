@@ -12,6 +12,7 @@ const inicio = () => {
           </h1>
         </Col>
       </Row>
+      <Row className="espacio"></Row>
 
       <Row className="section section-2 d-flex align-items-center justify-content-center text-center">
         <Col md={8}>
@@ -22,16 +23,18 @@ const inicio = () => {
           </p>
         </Col>
       </Row>
+      <Row className="espacio"></Row>
 
       <Row className="section section-3 d-flex align-items-center justify-content-center text-center">
         <Col md={8}>
           <h3 className="text-white">Tecnología de último nivel</h3>
           <p className="text-white">
-            Las altas capacidades del personal de nuestra empresa nos han
-            permitido implementar las últimas tecnologías del mercado.
+            El talento y expertise de nuestro equipo nos ha permitido liderar la
+            implementación de nuevas tecnologías en el mercado.
           </p>
         </Col>
       </Row>
+      <Row className="espacio"></Row>
     </Container>
   );
 };
