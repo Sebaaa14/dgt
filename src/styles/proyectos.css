@@ -1,4 +1,3 @@
-/* Estilos personalizados para la página de proyectos */
 .banner-container {
   background-color: #fbe5d1;
   text-align: center;
@@ -9,13 +8,25 @@
 .banner-container h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #5f3f06;
 }
 
 .banner-container button {
   padding: 10px 20px;
   font-size: 1.2rem;
+  background-color: #f5c28f !important;
+  border-color: #e0ad79 !important;
+  color: #5f3f06 !important;
+}
+
+.banner-container button:hover {
+  background-color: #e0ad79 !important;
 }
 
 .test {
   cursor: pointer;
+}
+
+.test2 {
+  background-color: #f7d7ba; /* Color de fondo */
 }

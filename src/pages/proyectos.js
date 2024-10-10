@@ -15,8 +15,8 @@ const Proyectos = () => {
   };
 
   return (
-    <div>
-      <Container className="mt-5 test">
+    <div className="test2">
+      <Container className="pt-5 test">
         <Carousel>
           <Carousel.Item onClick={() => handleProjectClick("proyectoA")}>
             <img
