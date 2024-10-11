@@ -1,5 +1,17 @@
 .custom-navbar {
   padding: 0.5rem 1rem;
+  background-color: rgb(255, 255, 255); /* Asegurarse de que el fondo sea blanco */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir una sombra para separación visual */
+}
+
+/* Efecto hover para el logo */
+.custom-navbar .navbar-brand img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.custom-navbar .navbar-brand img:hover {
+  transform: scale(1.1); /* Aumentar el tamaño del logo ligeramente */
+  filter: brightness(1.2); /* Aumentar el brillo */
 }
 
 /* Estilo para el toggle (hamburguesa) en dispositivos móviles */
@@ -16,30 +28,29 @@
   background-color: rgb(255, 255, 255);
   border-radius: 3px;
 }
+
 /* Cambiar el color del icono en hover */
 .custom-navbar .navbar-toggler:hover .navbar-toggler-icon {
   background-color: rgba(78, 78, 78, 0.8);
 }
+
 /* Estilos para los enlaces del menú */
 .custom-navbar .nav-link {
   padding-top: 7%;
   padding-bottom: 7%;
   color: rgb(0, 0, 0) !important;
   margin-left: 1rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efecto hover para los enlaces del menú */
 .custom-navbar .nav-link:hover {
-  color: rgba(163, 134, 6, 0.8) !important;
-  transform: scale(1.1);
+  color: rgba(163, 134, 6, 0.8) !important; /* Cambiar color en hover */
+  transform: scale(1.1); /* Ampliar ligeramente el enlace */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Añadir una sombra debajo del enlace en hover */
 }
 
-/* Fondo del Navbar */
-.custom-navbar {
-  background-color: rgb(255, 255, 255);
+/* Estilo para que los enlaces del menú se mantengan visibles en dispositivos móviles */
+.custom-navbar .navbar-collapse {
+  justify-content: flex-end; /* Alinea los enlaces del menú a la derecha */
 }
-/*
-.custom-navbar img {
-  filter: brightness(0) invert(1);
-}
-*/
