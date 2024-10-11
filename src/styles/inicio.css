@@ -5,7 +5,7 @@
 
 .section {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,12 +13,9 @@
 }
 
 .espacio {
-  padding-bottom: 0.7vh;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(44, 31, 3),
-    rgb(116, 90, 25)
-  );
+  padding: 1vh;
+  background-image: linear-gradient(to bottom, #272109, #161002);
+  color:#5c4903 ;
 }
 
 .section::before {
@@ -32,7 +29,15 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
-  opacity: 0.9; /* Opacidad imagenes */
+  opacity: 0.9; 
+  transition: transform 0.3s ease; 
+}
+
+.section-1:hover::before {
+  transform: scale(1.05); 
+}
+.section-3:hover::before {
+  transform: scale(1.05); 
 }
 
 .section-1::before {
@@ -40,35 +45,86 @@
 }
 
 .section-2::before {
-  background-image: url("../images/inicio/Home-2row.jpg");
+  background-image: url("../images/inicio/222.jpg");
+}
+
+.fila2col2 {
+  text-align: center; 
+}
+
+.fila2col2 .image-container {
+  width: 70%; 
+  height: 40vh;
+  background-image: url("../images/inicio/inn.jpg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  border-radius: 10px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /*border: 2px solid #8c6707; */
+  transition: transform 0.3s ease; 
+}
+
+.fila2col2 .image-container:hover {
+  transform: scale(1.05);
 }
 
 .section-3::before {
-  background-image: url("../images/inicio/Home-3row.jpg");
+  background-image: url("../images/inicio/hola.jpg");
 }
 
 /* Añadir una capa oscura */
-.section::after {
+.section-1::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.6
-  ); /* Cambia el valor alpha para ajustar la oscuridad */
+  background-color: rgba(0, 0, 0, 0.829); /* Cambiar el valor alpha para ajustar la oscuridad */
   z-index: -1;
 }
 
-/* Estilos para el texto */
+.section-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 14, 2, 0.315); 
+  z-index: -1;
+}
+
+.section-3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 14, 2, 0.87); 
+  z-index: -1;
+}
+
 .section h1,
 .section h3,
 .section p {
   color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra al texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
   z-index: 1;
+}
+
+.text-container-row2 {
+  background: linear-gradient(to bottom right, rgba(58, 41, 5, 0.103), rgba(255, 255, 255, 0.021)); /* Fondo con gradiente */
+  padding: 20px;
+  border-radius: 10px;
+  /*border: 4px solid #77540c;  Borde colorido */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}.texto2{
+  color: #a3830d;
+}
+
+.innovacion{
+  background-color: rgb(46, 31, 3);
 }
