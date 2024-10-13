@@ -8,7 +8,7 @@ import {
 import Inicio from "./pages/inicio";
 import Proyectos from "./pages/proyectos";
 import ProyectoDetalles from "./pages/proyectoDetalles";
-import Acerca from "./pages/acerca";
+import Nosotros from "./pages/nosotros";
 import Contactos from "./pages/contactos";
 import NotFound from "./pages/notFound";
 import Header from "./pages/header";
@@ -23,7 +23,7 @@ function App() {
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/proyectos" element={<Proyectos />} />
         <Route path="/proyecto/:id" element={<ProyectoDetalles />} />
-        <Route path="/acerca" element={<Acerca />} />
+        <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/contactos" element={<Contactos />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
