@@ -38,7 +38,7 @@ const Header = () => {
             <Nav.Link onClick={() => handleNavigate("proyectos")}>
               Proyectos
             </Nav.Link>
-            <Nav.Link onClick={() => handleNavigate("acerca")}>
+            <Nav.Link onClick={() => handleNavigate("nosotros")}>
               Nosotros
             </Nav.Link>
             <Nav.Link onClick={() => handleNavigate("contactos")}>
