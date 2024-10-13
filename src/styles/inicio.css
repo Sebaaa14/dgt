@@ -15,7 +15,7 @@
 .espacio {
   padding: 1vh;
   background-image: linear-gradient(to bottom, #272109, #161002);
-  color:#5c4903 ;
+  color:#a7a3a3 ;
 }
 
 .section::before {
@@ -53,15 +53,15 @@
 }
 
 .fila2col2 .image-container {
-  width: 70%; 
-  height: 40vh;
-  background-image: url("../images/inicio/inn.jpg"); 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  border-radius: 10px; 
+  width: 100%; 
+  max-width: 300px; /* Limitar el ancho máximo */
+  aspect-ratio: 4 / 3; /* Mantener proporción */
+  background-image: url("../images/inicio/inn.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  /*border: 2px solid #8c6707; */
   transition: transform 0.3s ease; 
 }
 

@@ -16,8 +16,8 @@ const Inicio = () => {
         <h5>Trabajo colaborativo con más de 10 empresas</h5>
       </Row>
 
-      <Row className="section section-2 d-flex align-items-center justify-content-center text-center py-5">
-        <Col md={5} className="text-container-row2">
+      <Row className="section section-2 align-items-center text-center py-5">
+        <Col xs={12} md={5} className="text-container-row2">
           <h2 className="texto2">Fuerte énfasis en innovación</h2>
           <p className="text-white">
             Nos hemos posicionado como una de las empresas TI más destacadas en
@@ -25,12 +25,14 @@ const Inicio = () => {
           </p>
         </Col>
         <Col
+          xs={12}
           md={5}
           className="fila2col2 d-flex justify-content-center align-items-center"
         >
           <div className="image-container"></div>
         </Col>
       </Row>
+
       <Row className="espacio d-flex align-items-center justify-content-center text-center">
         <h5>Número 1 en gestión de relaciones</h5>
       </Row>
