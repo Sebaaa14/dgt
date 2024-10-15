@@ -27,6 +27,49 @@
   cursor: pointer;
 }
 
+.test h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #3d2702;
+  text-transform: none;
+}
+
 .test2 {
-  background-color: #f7d7ba; /* Color de fondo */
+  background-color: #f7d7ba;
+}
+
+.carousel-img {
+  filter: brightness(0.5);
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease,
+    filter 0.3s ease;
+  opacity: 0.95;
+}
+
+.carousel-img:hover {
+  filter: brightness(0.8);
+  transform: scale(1.05);
+  opacity: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  margin-top: 0;
 }

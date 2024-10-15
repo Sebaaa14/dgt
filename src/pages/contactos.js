@@ -1,8 +1,17 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import "../styles/contactos.css";
 
 const Contactos = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert("¡Formulario de contacto enviado con éxito!");
+    navigate("/inicio");
+  };
+
   return (
     <div className="full-page-background">
       <Container
@@ -22,7 +31,7 @@ const Contactos = () => {
             </p>
           </Col>
           <Col md={6}>
-            <Form className="contact-form">
+            <Form className="contact-form" onSubmit={handleSubmit}>
               <Row>
                 <Col md={6}>
                   <Form.Group controlId="formName" className="mb-2">
