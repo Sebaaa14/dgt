@@ -1,66 +1,101 @@
 .nosotros-container {
-    background-color: #faf3e0;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    padding: 3rem;
-  }
-  
-  .titulo-seccion {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #3d2702;
-    text-transform: none;
-  }
-  
-  .descripcion-seccion {
-    font-size: 1.2rem;
-    color: #4a4a4a;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-  
-  .card-nosotros {
-    background-color: #201307e9;
-    border-radius: 15px;
-    color: #faf3e0;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    padding: 1.5rem;
-  }
-  
-  .card-nosotros:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .card-titulo {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #ffd07f;
-  }
-  
-  .seccion {
-    padding-top: 30px;
-    border-top: 3px solid #3d2702;
-  }
-  
-  .logos-row {
-    margin-top: 20px;
-  }
-  
-  .logo-imagen {
-    width: 100%;
-    max-width: 130px;
-    height: auto;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0.8;
-  }
-  
-  .logo-imagen:hover {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  
+  background-color: #faf3e0;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  padding: 3rem;
+}
+
+.titulo-seccion {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #3d2702;
+}
+
+.descripcion-seccion {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.card-nosotros {
+  background-color: #201307e9;
+  border-radius: 15px;
+  color: #faf3e0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  padding: 1.5rem;
+}
+
+.card-nosotros:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-titulo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffd07f;
+}
+
+.seccion {
+  padding-top: 30px;
+  border-top: 3px solid #3d2702;
+}
+
+.logos-row {
+  margin-top: 20px;
+}
+
+.logo-imagen {
+  width: 100%;
+  max-width: 18vh;
+  height: 10vh; 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.logo-imagen:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.logo-imagen.aws {
+  background-image: url('../images/nosotros/AWS.png');
+}
+
+.logo-imagen.alianza2 {
+  background-image: url('../images/nosotros/federal_access.png');
+  filter: invert(100%);
+}
+
+.logo-imagen.alianza3 {
+  background-image: url('../images/nosotros/microsoft.png');
+}
+
+.logo-imagen.proveedor1 {
+  background-image: url('../images/nosotros/gtd.png');
+}
+
+.logo-imagen.proveedor2 {
+  background-image: url('../images/nosotros/zendesk.png');
+}
+
+.logo-imagen.proveedor3 {
+  background-image: url('../images/nosotros/veridas.png');
+}
+
+.logo-imagen.cliente1 {
+  background-image: url('../images/nosotros/silta.png');
+}
+
+.logo-imagen.cliente2 {
+  background-image: url('../images/nosotros/abv.png');
+}
+
