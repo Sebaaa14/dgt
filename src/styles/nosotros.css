@@ -4,8 +4,8 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   padding: 3rem;
   background-image: url(../images/nosotros/background.png);
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -25,11 +25,15 @@
 }
 
 .card-nosotros {
-  background-color: #ff7b0093; 
-  background-image: linear-gradient(45deg, rgba(87, 47, 10, 0.089), rgba(148, 127, 108, 0.575)); 
+  background-color: #ff7b0093;
+  background-image: linear-gradient(
+    45deg,
+    rgba(87, 47, 10, 0.089),
+    rgba(148, 127, 108, 0.575)
+  );
   border-radius: 15px;
   color: #faf3e0;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
 }
 
@@ -52,7 +56,7 @@
 .logo-imagen {
   width: 100%;
   max-width: 18vh;
-  height: 10vh; 
+  height: 10vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -73,46 +77,46 @@
 }
 
 .logo-imagen.vision {
-  background-image: url('../images/nosotros/vision.png');
+  background-image: url("../images/nosotros/vision.png");
 }
 
 .logo-imagen.mision {
-  background-image: url('../images/nosotros/mision.png');
+  background-image: url("../images/nosotros/mision.png");
 }
 
 .logo-imagen.valores {
-  background-image: url('../images/nosotros/valores.png');
+  background-image: url("../images/nosotros/valores.png");
 }
 
 .logo-imagen.aws {
-  background-image: url('../images/nosotros/AWS.png');
+  background-image: url("../images/nosotros/AWS.png");
 }
 
 .logo-imagen.alianza2 {
-  background-image: url('../images/nosotros/federal_access.png');
+  background-image: url("../images/nosotros/federal_access.png");
   filter: invert(100%);
 }
 
 .logo-imagen.alianza3 {
-  background-image: url('../images/nosotros/enel.png');
+  background-image: url("../images/nosotros/enel.png");
 }
 
 .logo-imagen.proveedor1 {
-  background-image: url('../images/nosotros/gtd.png');
+  background-image: url("../images/nosotros/gtd.png");
 }
 
 .logo-imagen.proveedor2 {
-  background-image: url('../images/nosotros/zendesk.png');
+  background-image: url("../images/nosotros/zendesk.png");
 }
 
 .logo-imagen.proveedor3 {
-  background-image: url('../images/nosotros/veridas.png');
+  background-image: url("../images/nosotros/veridas.png");
 }
 
 .logo-imagen.cliente1 {
-  background-image: url('../images/nosotros/silta.png');
+  background-image: url("../images/nosotros/silta.png");
 }
 
 .logo-imagen.cliente2 {
-  background-image: url('../images/nosotros/abv.png');
+  background-image: url("../images/nosotros/abv.png");
 }

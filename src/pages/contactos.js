@@ -22,12 +22,12 @@ const Contactos = () => {
           <Col md={6} className="contact-info py-20">
             <h1>¿Necesitas hablar con nosotros? ¡Contáctanos!</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-              eu enim rhoncus ipsum pulvinar gravida. Proin et tempus tortor.
-              Morbi aliquet, lorem ac volutpat luctus, tellus quam viverra ante,
-              quis luctus mi lacus sit amet est. Curabitur id sollicitudin est.
-              Quisque tempor nisl eu dui pellentesque, eget molestie est
-              porttitor.
+              Estamos aquí para resolver tus inquietudes y ayudarte con lo que
+              necesites. Ya sea que tengas preguntas sobre nuestros proyectos,
+              quieras conocer más sobre nuestros servicios o simplemente quieras
+              establecer una colaboración, no dudes en comunicarte con nosotros.
+              Completa el formulario y nos pondremos en contacto contigo lo
+              antes posible.
             </p>
           </Col>
           <Col md={6}>

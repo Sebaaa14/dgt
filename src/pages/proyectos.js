@@ -75,9 +75,3 @@ const Proyectos = () => {
 };
 
 export default Proyectos;
-//   ** INFO PARA EL BENJA Y SEBA, DE CARÁCTER TÉCNICO**
-// - Se utilizó una base de datos en la nube (de esos gratis que tenían muchas limitaciones :( ). Agregar que se demoraba como 10 segundos por acciones de insert, update (ni hablar cuando se tenía que imprimir)
-// - El sistema sólo lo utilizaría la secretaría de la administración (difícil)
-// - No se alcanzó a terminar, poco tiempo y mucho cambio de req
-// - Se utilizó python, en específico la librería tKinter (no la recomiendo)
-// - por ahí debo tener el manual de usuario o documentación (si necesitan más info me avisan, por último inventan)

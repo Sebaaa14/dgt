@@ -39,27 +39,29 @@ const ProyectoDetalles = () => {
   const project = projectDetails[id];
 
   return (
-    <Container className="d-flex justify-content-center align-items-center min-vh-100">
-      <Card className="p-5 project-card">
-        <Row className="align-items-center">
-          <Col md={6} className="text-center">
-            <Image
-              src={project?.image}
-              alt={project?.title}
-              fluid
-              className="project-image"
-            />
-            <p className="project-duration mt-3">
-              <strong>Duración del proyecto:</strong> {project?.duration}
-            </p>
-          </Col>
-          <Col md={6}>
-            <h1 className="project-title">{project?.title}</h1>
-            <p className="project-description">{project?.description}</p>
-          </Col>
-        </Row>
-      </Card>
-    </Container>
+    <div className="detalles-container">
+      <Container className="d-flex justify-content-center align-items-center min-vh-100">
+        <Card className="p-5 project-card">
+          <Row className="align-items-center">
+            <Col md={6} className="text-center">
+              <Image
+                src={project?.image}
+                alt={project?.title}
+                fluid
+                className="project-image"
+              />
+              <p className="project-duration mt-3">
+                <strong>Duración del proyecto:</strong> {project?.duration}
+              </p>
+            </Col>
+            <Col md={6}>
+              <h1 className="project-title">{project?.title}</h1>
+              <p className="project-description">{project?.description}</p>
+            </Col>
+          </Row>
+        </Card>
+      </Container>
+    </div>
   );
 };
 
