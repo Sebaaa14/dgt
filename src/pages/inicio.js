@@ -13,7 +13,7 @@ const Inicio = () => {
         </Col>
       </Row>
       <Row className="espacio d-flex align-items-center justify-content-center text-center">
-        <h5>Trabajo colaborativo con más de 10 empresas</h5>
+        <h5>Trabajo colaborativo con distintas empresas</h5>
       </Row>
 
       <Row className="section section-2 align-items-center text-center py-5">
