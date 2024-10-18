@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "../styles/nosotros.css";
+import "../styles/nosotros.css"; // Asegúrate de que la ruta del archivo CSS sea correcta
 
 const Nosotros = () => {
   return (
@@ -11,8 +11,7 @@ const Nosotros = () => {
           <h2 className="titulo-seccion">Sobre Data Guard Technologies</h2>
           <p className="descripcion-seccion">
             Somos una empresa comprometida con la innovación tecnológica y el
-            desarrollo sostenible. Nuestro equipo trabaja en colaboración con
-            empresas nacionales, creando soluciones que marcan la diferencia.
+            desarrollo TI.
           </p>
         </Col>
       </Row>
@@ -23,6 +22,7 @@ const Nosotros = () => {
           <Card className="card-nosotros">
             <Card.Body>
               <Card.Title className="card-titulo">Nuestra Misión</Card.Title>
+              <div className="logo-imagen mision"></div>
               <Card.Text>
                 Brindar soluciones tecnológicas innovadoras para transformar
                 procesos y optimizar el rendimiento de nuestros clientes.
@@ -35,6 +35,7 @@ const Nosotros = () => {
           <Card className="card-nosotros">
             <Card.Body>
               <Card.Title className="card-titulo">Nuestra Visión</Card.Title>
+              <div className="logo-imagen vision"></div>
               <Card.Text>
                 Ser líderes nacionales en la integración de tecnología avanzada,
                 generando un impacto positivo en la sociedad.
@@ -47,6 +48,7 @@ const Nosotros = () => {
           <Card className="card-nosotros">
             <Card.Body>
               <Card.Title className="card-titulo">Nuestros Valores</Card.Title>
+              <div className="logo-imagen valores"></div>
               <Card.Text>
                 Innovación, compromiso, honestidad y trabajo en equipo definen
                 nuestra identidad y guían nuestras acciones.
@@ -112,20 +114,3 @@ const Nosotros = () => {
 };
 
 export default Nosotros;
-
-
-/* 
-Alianzas
-1.AWS
-2.Federal Access
-
-Proveedores
-1.Microsoft
-2.Veridas
-3.Zendesk
-
-3.GTD
-4.Entel
-5.Netline
-
-*/

@@ -3,6 +3,10 @@
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   padding: 3rem;
+  background-image: url(../images/nosotros/background.png);
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 .titulo-seccion {
@@ -21,18 +25,14 @@
 }
 
 .card-nosotros {
-  background-color: #201307e9;
+  background-color: #ff7b0093; /* Color de fondo de la tarjeta */
+  background-image: linear-gradient(45deg, rgba(87, 47, 10, 0.8), rgb(90, 79, 69)); /* Gradiente suave */
   border-radius: 15px;
   color: #faf3e0;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
   padding: 1.5rem;
 }
 
-.card-nosotros:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-}
 
 .card-titulo {
   font-size: 1.8rem;
@@ -66,6 +66,25 @@
   opacity: 1;
 }
 
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo lo contenido dentro del Card.Body */
+  justify-content: center; /* Opcional: Asegura que el contenido se centre verticalmente */
+}
+
+.logo-imagen.vision {
+  background-image: url('../images/nosotros/vision.png');
+}
+
+.logo-imagen.mision {
+  background-image: url('../images/nosotros/mision.png');
+}
+
+.logo-imagen.valores {
+  background-image: url('../images/nosotros/valores.png');
+}
+
 .logo-imagen.aws {
   background-image: url('../images/nosotros/AWS.png');
 }
@@ -76,7 +95,7 @@
 }
 
 .logo-imagen.alianza3 {
-  background-image: url('../images/nosotros/microsoft.png');
+  background-image: url('../images/nosotros/enel.png');
 }
 
 .logo-imagen.proveedor1 {
@@ -98,4 +117,3 @@
 .logo-imagen.cliente2 {
   background-image: url('../images/nosotros/abv.png');
 }
-
