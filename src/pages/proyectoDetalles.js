@@ -1,5 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Container, Row, Col, Image, Card } from "react-bootstrap";
+import "../styles/proyectoDetalles.css";
 
 const ProyectoDetalles = () => {
   const { id } = useParams();
@@ -8,32 +10,56 @@ const ProyectoDetalles = () => {
     proyectoA: {
       title: "Servicios Integrales Illapel",
       description:
-        "Es una empresa de servicios integrales automotriz, se le realizo una aplicación web para vista de los usuarios y además un apartado de ventas de productos, se priorizo tambien la creación de correos empresariales",
+        "Es una empresa de servicios integrales automotriz, se realizó una aplicación web para vista de los usuarios y además un apartado de ventas de productos. Se priorizó también la creación de correos empresariales.",
+      image: require("../images/proyectos/illapel.png"),
+      duration: "6 meses",
     },
     proyectoB: {
       title: "Sistema de gestión de ingresos y egresos para ABV (SIEABV)",
       description:
-        "La Asociación de Básquetbol de Valparaíso (ABV) ha solicitado a DGT el desarrollo de un sistema que permita registrar los ingresos y egresos que se perciben. Previamente, no contaban con un sistema para realizar dichas actividades, así que utilizaban planillas excel y para asegurarse que se tenían todas las transacciones correctas del mes, se revisaba la cartola de movimientos de la cuenta del banco. Además, redactaban las transacciones individualmente en documentos y se imprimían para su posterior archivo en carpetas. Entonces se tenían respaldas físicamente en caso de averío del computador. DGT realizó un sistema de ingresos y egresos llamado SIEABV que tenía las siguientes funcionalidades: Visualizar en tabla los ingresos y egresos, pudiendo filtrar por mes, tipo de transacción y rango de monto.Ingresar nuevas transacciones por medio de un formulario, donde también se contaba con la opción de imprimir luego de enviar. Por defecto se genera el documento con la plantilla solicitada por el cliente Modificar la información de una transacción existente, también con la opción de imprimir",
+        "La Asociación de Básquetbol de Valparaíso (ABV) solicitó un sistema para registrar ingresos y egresos, que anteriormente se manejaban en Excel. Se desarrolló SIEABV, un sistema que permite visualizar y gestionar transacciones, con opciones de impresión y modificación.",
+      image: require("../images/proyectos/abv.jpg"),
+      duration: "8 meses",
     },
     proyectoC: {
-      title: "Proyecto C",
-      description: "Descripción del Proyecto C.",
+      title: "Fracciones Feroces",
+      description:
+        "Videojuego educativo matemático para enseñar a los alumnos de 5to a 8vo básico sobre las fracciones.",
+      image: require("../images/proyectos/fracciones.png"),
+      duration: "4 meses",
     },
-    proyectoD: {
-      title: "Proyecto D",
-      description: "Descripción del Proyecto D.",
-    },
+    // proyectoD: {
+    //   title: "Proyecto D",
+    //   description: "Descripción del Proyecto D.",
+    //   image: "",
+    //   duration: "x meses",
+    // },
   };
 
   const project = projectDetails[id];
 
-  console.log(id);
-
   return (
-    <div className="project-details">
-      <h1>{project?.title}</h1>
-      <p>{project?.description}</p>
-    </div>
+    <Container className="d-flex justify-content-center align-items-center min-vh-100">
+      <Card className="p-5 project-card">
+        <Row className="align-items-center">
+          <Col md={6} className="text-center">
+            <Image
+              src={project?.image}
+              alt={project?.title}
+              fluid
+              className="project-image"
+            />
+            <p className="project-duration mt-3">
+              <strong>Duración del proyecto:</strong> {project?.duration}
+            </p>
+          </Col>
+          <Col md={6}>
+            <h1 className="project-title">{project?.title}</h1>
+            <p className="project-description">{project?.description}</p>
+          </Col>
+        </Row>
+      </Card>
+    </Container>
   );
 };
 
