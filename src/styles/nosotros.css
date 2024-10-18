@@ -4,9 +4,9 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   padding: 3rem;
   background-image: url(../images/nosotros/background.png);
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
 }
 
 .titulo-seccion {
@@ -25,14 +25,13 @@
 }
 
 .card-nosotros {
-  background-color: #ff7b0093; /* Color de fondo de la tarjeta */
-  background-image: linear-gradient(45deg, rgba(87, 47, 10, 0.8), rgb(90, 79, 69)); /* Gradiente suave */
+  background-color: #ff7b0093; 
+  background-image: linear-gradient(45deg, rgba(87, 47, 10, 0.089), rgba(148, 127, 108, 0.575)); 
   border-radius: 15px;
   color: #faf3e0;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
   padding: 1.5rem;
 }
-
 
 .card-titulo {
   font-size: 1.8rem;

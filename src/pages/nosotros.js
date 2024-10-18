@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "../styles/nosotros.css"; // Asegúrate de que la ruta del archivo CSS sea correcta
+import "../styles/nosotros.css"; 
 
 const Nosotros = () => {
   return (
@@ -19,7 +19,7 @@ const Nosotros = () => {
       {/* Misión, Visión y Valores */}
       <Row className="d-flex justify-content-around">
         <Col xs={12} md={4} className="mb-4">
-          <Card className="card-nosotros">
+          <Card className="card-nosotros ">
             <Card.Body>
               <Card.Title className="card-titulo">Nuestra Misión</Card.Title>
               <div className="logo-imagen mision"></div>
@@ -62,7 +62,7 @@ const Nosotros = () => {
       <Row className="seccion mt-5">
         <Col className="text-center">
           <h3>Alianzas</h3>
-          <p>Trabajamos de la mano con estas organizaciones:</p>
+          <p>Trabajamos de la mano con estas organizaciones</p>
         </Col>
         <Row className="logos-row d-flex justify-content-center">
           <Col xs={6} md={3} className="mb-4 d-flex justify-content-center">
@@ -80,7 +80,7 @@ const Nosotros = () => {
       <Row className="seccion mt-5">
         <Col className="text-center">
           <h3>Proveedores</h3>
-          <p>Nuestros proveedores garantizan la excelencia:</p>
+          <p>Nuestros proveedores garantizan la excelencia</p>
         </Col>
         <Row className="logos-row d-flex justify-content-center">
           <Col xs={6} md={3} className="mb-4 d-flex justify-content-center">
@@ -98,7 +98,7 @@ const Nosotros = () => {
       <Row className="seccion mt-5">
         <Col className="text-center">
           <h3>Clientes</h3>
-          <p>Colaboramos con clientes que comparten nuestra visión:</p>
+          <p>Colaboramos con clientes que comparten nuestra visión</p>
         </Col>
         <Row className="logos-row d-flex justify-content-center">
           <Col xs={6} md={3} className="mb-4 d-flex justify-content-center">
